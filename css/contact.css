@@ -1,0 +1,56 @@
+html,
+body {
+  background-image: url(../images/cont.jpg);
+}
+
+section {
+  grid-area: c;
+}
+
+#contactForm {
+  background-color: rgba(3, 19, 46, 0.75);
+  width: 45%;
+  margin-bottom: 40px;
+  padding: 30px;
+}
+
+input,
+select,
+textarea {
+  font-family: proxima-nova, sans-serif;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+textarea {
+  min-height: 150px;
+}
+
+.btn-primary {
+  color: #fff;
+  float: right;
+  background-color: rgba(3, 19, 46, 0.65);
+  border: white solid 2.5px;
+  padding: 20px 60px 20px 60px;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: semplicitapro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+}
+.btn-primary:hover {
+  background-color: #69a9ff;
+}
+
+/*Media Query*/
+@media only screen and (max-width: 800px) {
+  #contactForm {
+    width: 90%;
+  }
+}

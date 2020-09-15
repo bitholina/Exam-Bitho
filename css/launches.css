@@ -1,0 +1,74 @@
+html,
+body {
+  background-image: url(../images/bg_launches.jpg);
+}
+
+.container {
+  grid-template-rows: 80px 650px auto auto;
+  grid-template-areas:
+    "n n n n n n n n n n n n"
+    ". h h h h . . . . . . ."
+    "s c c c c c c c c c c c"
+    "f f f f f f f f f f f f";
+}
+
+aside {
+  grid-area: s;
+  background-color: #201714;
+  height: auto;
+}
+
+section {
+  grid-area: c;
+  background-color: #201714;
+  height: auto;
+  justify-content: left;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+#launch_btn {
+  float: right;
+}
+
+.button {
+  background-color: rgba(3, 19, 46, 0.65);
+  border: white solid 2.5px;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  padding: 20px 60px 20px 60px;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: semplicitapro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+}
+.button:hover {
+  background-color: #69a9ff;
+}
+
+.results {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column-reverse;
+}
+
+.results > div {
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  width: 90%;
+  margin-bottom: 30px;
+  padding: 10px 10px;
+}
+
+h5 {
+  font-size: 43px !important;
+  margin-bottom: -25px !important;
+  margin-top: -20px !important;
+}
+
+h6 {
+  font-size: 18px !important;
+  margin-bottom: -15px !important;
+}

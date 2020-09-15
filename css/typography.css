@@ -1,0 +1,68 @@
+/*Typography*/
+
+/* Adobe Typekit fonts (Bebas Neue, Simplicita Pro, Proxima Nova)
+-----------------------------------------------------------------------------------------------------------------*/
+@import url("https://use.typekit.net/jco7oac.css");
+
+h1 {
+  /*Headlines*/
+  font-family: semplicitapro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 95px;
+}
+h2 {
+  /*Ingress*/
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+h3 {
+  /*for space-x only*/
+  font-family: bebas-neue-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  letter-spacing: 10px;
+}
+h4 {
+  /*body copy*/
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 1.4em;
+}
+h5 {
+  /*contact form*/
+  font-family: semplicitapro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 23px;
+  margin-bottom: -3px;
+  margin-top: -3px;
+}
+h6 {
+  /*Ingress blue*/
+  color: #69a9ff;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+
+.space_typo {
+}
+
+.headline_typo {
+  line-height: 6em;
+  margin: -60px 0px -50px 0px;
+}
+.headline_typo1 {
+  line-height: 6em;
+  margin: -60px 0px -20px 0px;
+}
+
+.ingress_typo {
+}

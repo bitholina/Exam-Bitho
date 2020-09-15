@@ -1,0 +1,199 @@
+/*-- g l o b a l ---------------------------------- g l o b a l ------------------------- g l o b a l ------------------*/
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: proxima-nova, sans-serif;
+  font-size: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+/*pages*/
+
+/*------Grid set up------------------------------*/
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 80px 450px auto auto;
+  grid-template-areas:
+    "n n n n n n n n n n n n"
+    ". h h h h h . . . . . ."
+    ". c c c c c c c c c c c"
+    "f f f f f f f f f f f f";
+}
+
+.container > 
+aside,
+section,
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+header {
+  grid-area: h;
+  display: block;
+  height: auto;
+  padding-top: 130px;
+  padding-left: 30px;
+}
+
+
+/* IN ALL pages */
+
+/*-- n a v grid area---------------------......--  n a v -----------------------------  n a v  ---------------*/
+nav {
+  grid-area: n;
+  /*background-color: #96ceb4;*/
+  font-size: 1.5em;
+  font-family: semplicitapro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.11em;
+  /*text-transform: uppercase;*/
+}
+
+/*--f o o t e r---- grid area-------------------f o o t e r------------------------------ f o o t e r ---------------*/
+footer {
+  grid-area: f;
+  flex-direction: column;
+  padding: 30px;
+  background-color: #03132e;
+  justify-content: flex-start;
+  align-items: flex-start; 
+}
+
+footer > .box {
+  text-align:left;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 4px 12px 4px 12px;
+  color:#707070;
+}
+
+.some, .rights, .adr, .fab{
+  color:#707070;
+  padding-right: 15px;
+}
+
+.some:hover{
+  color:#69A9FF;
+}
+
+/*Navigation Hamburger Menu
+----------------------------------------------------Navigation-------*/
+.bar {
+  width: 100%;
+  height: 65px;
+  z-index:999;
+}
+a {
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin-right: 10px;
+  top: 42px;
+  text-align: center;
+  line-height: 65px;
+  display: none;
+  position: relative;
+  background-color: darkblue;
+  width: 100%;  
+}
+
+li a {
+  position: relative;
+  display: block;
+  text-align: center;
+  border-bottom: 2px solid gray;
+  text-decoration: none;
+  z-index: 999; 
+}
+
+li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+span {
+  color:white;
+  text-decoration: underline;
+}
+
+#hamburger-menu {
+  display: none;
+  float: right;
+}
+
+label {
+  color:  white;
+  float:right;
+  font-size: 1.5em;
+  position: relative;
+  margin-right: 10px;
+  margin-top: 4px; 
+ 
+}
+#hamburger-menu:checked ~ ul {
+  display: block; 
+}
+
+
+/*-------------------------------------------------------------------------------------------------------1200---Media Queries-------------------------*/ 
+@media only screen and (min-width: 900px){
+  /*-------------------------------------------------------------------------------------------------------1200---Media Queries-------------------------*/ 
+            /*-------navigation---------*/
+  
+                  .bar{
+                      width: 100%;
+                  }  
+
+                  ul{
+                    display: inline;
+                    float: right;
+                    background-color: transparent;
+                      position: relative;
+                      top: -23px;
+                      text-align: right;
+                      
+                  }
+  
+                  li{ display:inline; 
+                    
+                  }
+  
+                  li a{
+                      position: relative;
+                      top:0px; 
+                      display:inline;
+                      text-align: center;
+                      padding: 16px 34px;
+                      
+                      
+                      border-bottom: none;
+                      }
+
+                      #hamburger-menu{
+                      display: none;   
+                  }
+  
+                  label{
+                      display:none;
+                  }
+  
+                  #hamburger-menu:checked ~ ul{
+                      display:none;
+                  }
