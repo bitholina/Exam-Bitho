@@ -1,0 +1,44 @@
+html,
+body {
+  background-image: url(../images/about.jpg);
+}
+
+section {
+  grid-area: c;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: left;
+  align-items: flex-start;
+  padding: 30px;
+}
+.text {
+  padding-left: 15px;
+  padding-top: 25px;
+}
+
+section > .item {
+  background-color: rgba(3, 19, 46, 0.75);
+  width: 45%;
+  max-width: 300px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  padding: 2px 4px 12px 4px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #69a9ff;
+}
+
+img {
+  width: 100%;
+  border: white solid 2px;
+}
+
+#right {
+  float: right;
+  padding-right: 12px;
+}

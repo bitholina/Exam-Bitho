@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Space X information and live feed launches" />
+    <meta name="keywords" content="space, technology, musk, universe, rockets, science, mars, launches" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space X</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/typography.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="bar">
+        <label for="hamburger-menu"><i class="fas fa-bars"></i></label
+        ><input type="checkbox" id="hamburger-menu" />
+        <ul>
+          <li>
+            <a href="index.html">Home</span></a>
+          </li>
+          <li><a href="launches.html">Launches</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html"><span>Contact</span></a></li>
+        </ul>
+      </nav>
+
+      <header>
+        <div class="space_typo"><h3>SPACE X</h3></div>
+        <div class="headline_typo">
+          <h1>GET IN TOUCH</h1>
+        </div>
+        <div class="ingress_typo">
+          <h6>
+            For any inquery, please fill in the form under.
+          </h6>
+        </div>
+      </header>
+      <section>
+        <form id="contactForm">
+          <div class="form-group">
+            <h5>First Name</h5>
+            <input
+              class="form-control"
+              name="name"
+              id="name"
+              placeholder="Please fill in your first name"
+            />
+            <div class="form-error" id="nameError">Please enter your name</div>
+          </div>
+  
+          <div class="form-group">
+            <h5>Last Name</h5>
+            <input
+              class="form-control"
+              name="lastname"
+              id="lastname"
+              placeholder="Last Name (at least 1 character)"
+            />
+            <div class="form-error" id="lastNameError">
+              Your answer must be at least 1 character
+            </div>
+          </div>
+  
+          <div class="form-group">
+            <h5>Email Address</h5>
+            <input
+              class="form-control"
+              name="email"
+              id="email"
+              placeholder="Email"
+            />
+            <div class="form-error" id="emailError">
+              Please enter your email address
+            </div>
+            <div class="form-error" id="invalidEmailError">
+              Please enter a valid email address
+            </div>
+          </div>
+  
+          <div class="form-group">
+            <h5>Message</h5>
+            <textarea
+              class="form-control"
+              name="message"
+              id="message"
+              placeholder="Message (at least 5 characters)"
+            ></textarea>
+            <div class="form-error" id="messageError">
+              The message must be at least 5 characters.
+            </div>
+          </div>
+  
+          <button type="submit" class="btn btn-primary" id="submit">
+            SEND
+          </button>
+        </form>
+      </section>
+      <footer>
+        <div class="box">
+            
+        <a class="some" href="https://twitter.com/spacex" title="Twitter"><i class="fab fa-twitter"></i>Twitter</a>
+        <a class="some" href="https://www.youtube.com/spacex" title="YouTube"><i class="fab fa-youtube"></i>YouTube</a>
+        <a class="some" href="https://www.instagram.com/spacex/" title="Instagram"><i class="fab fa-instagram"></i>Instagram</a>
+                
+        <p class="adr">Hawthorne (HQ), CA
+            United States
+            1 Rocket Rd</p>
+        <p class="rights">SPACE X © 2020</p>
+        </div>
+       
+      </footer>
+    </div>
+    <script src="js/contact.js"></script>
+  </body>
+</html>
