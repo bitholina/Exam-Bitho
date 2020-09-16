@@ -54,3 +54,22 @@ textarea {
     width: 90%;
   }
 }
+
+#nameError {
+  display: none;
+}
+#lastNameError {
+  display: none;
+}
+
+#emailError {
+  display: none;
+}
+
+#invalidEmailError {
+  display: none;
+}
+
+#messageError {
+  display: none;
+}
