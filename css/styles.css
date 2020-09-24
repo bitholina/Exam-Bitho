@@ -15,7 +15,6 @@ body {
   background-size: cover;
 }
 
-
 /*pages*/
 
 /*------Grid set up------------------------------*/
@@ -23,7 +22,7 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 80px 450px auto auto;
+  grid-template-rows: 80px auto auto auto;
   grid-template-areas:
     "n n n n n n n n n n n n"
     ". h h h h h . . . . . ."
@@ -31,8 +30,7 @@ body {
     "f f f f f f f f f f f f";
 }
 
-.container > 
-aside,
+.container > aside,
 section,
 header,
 footer {
@@ -50,13 +48,12 @@ header {
   padding-left: 30px;
 }
 
-
 /* IN ALL pages */
 
 /*-- n a v grid area---------------------......--  n a v -----------------------------  n a v  ---------------*/
 nav {
   grid-area: n;
-  /*background-color: #96ceb4;*/
+  background-color: rgba(3, 19, 46);
   font-size: 1.5em;
   font-family: semplicitapro, sans-serif;
   font-weight: 700;
@@ -72,24 +69,45 @@ footer {
   padding: 30px;
   background-color: #03132e;
   justify-content: flex-start;
-  align-items: flex-start; 
+  align-items: flex-start;
 }
 
 footer > .box {
-  text-align:left;
+  text-align: left;
   margin-top: 50px;
   margin-bottom: 50px;
   padding: 4px 12px 4px 12px;
-  color:#707070;
 }
 
-.some, .rights, .adr, .fab{
-  color:#707070;
+.some,
+.rights,
+.adr,
+.fab {
+  color: lightgray;
   padding-right: 15px;
 }
 
-.some:hover{
-  color:#69A9FF;
+.some:hover {
+  color: #69a9ff;
+}
+
+/*Buttons*/
+.button {
+  background-color: rgba(3, 19, 46, 0.65);
+  border: white solid 2.5px;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  margin-right: 39px;
+  padding: 20px 60px 20px 60px;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: semplicitapro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+}
+.button:hover {
+  background-color: #69a9ff;
 }
 
 /*Navigation Hamburger Menu
@@ -97,7 +115,7 @@ footer > .box {
 .bar {
   width: 100%;
   height: 65px;
-  z-index:999;
+  z-index: 999;
 }
 a {
   color: white;
@@ -111,8 +129,8 @@ ul {
   line-height: 65px;
   display: none;
   position: relative;
-  background-color: darkblue;
-  width: 100%;  
+  background-color: rgba(3, 19, 46);
+  width: 100%;
 }
 
 li a {
@@ -121,7 +139,7 @@ li a {
   text-align: center;
   border-bottom: 2px solid gray;
   text-decoration: none;
-  z-index: 999; 
+  z-index: 999;
 }
 
 li a:hover {
@@ -129,7 +147,7 @@ li a:hover {
   text-decoration: underline;
 }
 span {
-  color:white;
+  color: white;
   text-decoration: underline;
 }
 
@@ -139,61 +157,80 @@ span {
 }
 
 label {
-  color:  white;
-  float:right;
+  color: white;
+  float: right;
   font-size: 1.5em;
   position: relative;
   margin-right: 10px;
-  margin-top: 4px; 
- 
+  margin-top: 4px;
 }
 #hamburger-menu:checked ~ ul {
-  display: block; 
+  display: block;
 }
 
+/*-------------------------------------------------------------------------------------------------------1200---Media Queries-------------------------*/
+@media only screen and (min-width: 900px) {
+  /*-------------------------------------------------------------------------------------------------------1200---Media Queries-------------------------*/
+  /*-------navigation---------*/
 
-/*-------------------------------------------------------------------------------------------------------1200---Media Queries-------------------------*/ 
-@media only screen and (min-width: 900px){
-  /*-------------------------------------------------------------------------------------------------------1200---Media Queries-------------------------*/ 
-            /*-------navigation---------*/
-  
-                  .bar{
-                      width: 100%;
-                  }  
+  nav {
+    background-color: transparent;
+  }
+  .bar {
+    width: 100%;
+  }
 
-                  ul{
-                    display: inline;
-                    float: right;
-                    background-color: transparent;
-                      position: relative;
-                      top: -23px;
-                      text-align: right;
-                      
-                  }
-  
-                  li{ display:inline; 
-                    
-                  }
-  
-                  li a{
-                      position: relative;
-                      top:0px; 
-                      display:inline;
-                      text-align: center;
-                      padding: 16px 34px;
-                      
-                      
-                      border-bottom: none;
-                      }
+  ul {
+    display: inline;
+    float: right;
+    background-color: transparent;
+    position: relative;
+    top: -23px;
+    text-align: right;
+  }
 
-                      #hamburger-menu{
-                      display: none;   
-                  }
-  
-                  label{
-                      display:none;
-                  }
-  
-                  #hamburger-menu:checked ~ ul{
-                      display:none;
-                  }
+  li {
+    display: inline;
+  }
+
+  li a {
+    position: relative;
+    top: 0px;
+    display: inline;
+    text-align: center;
+    padding: 16px 34px;
+
+    border-bottom: none;
+  }
+
+  #hamburger-menu {
+    display: none;
+  }
+
+  label {
+    display: none;
+  }
+
+  #hamburger-menu:checked ~ ul {
+    display: none;
+  }
+
+  @media only screen and (max-width: 800px) {
+  }
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 500px) {
+  .button {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    padding: 30px 20px 30px 20px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+}

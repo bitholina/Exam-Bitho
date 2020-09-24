@@ -48,13 +48,6 @@ textarea {
   background-color: #69a9ff;
 }
 
-/*Media Query*/
-@media only screen and (max-width: 800px) {
-  #contactForm {
-    width: 90%;
-  }
-}
-
 #nameError {
   display: none;
 }
@@ -72,4 +65,16 @@ textarea {
 
 #messageError {
   display: none;
+}
+
+/*Media Query*/
+@media only screen and (max-width: 800px) {
+  #contactForm {
+    width: 90%;
+  }
+
+  h6 {
+    background-color: rgba(3, 19, 46) !important;
+    padding: 30px;
+  }
 }
