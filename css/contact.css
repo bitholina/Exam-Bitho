@@ -67,7 +67,8 @@ textarea {
   display: none;
 }
 
-/*Media Query*/
+/*Media Query
+----------------------------------------------------Media Query-------*/
 @media only screen and (max-width: 800px) {
   #contactForm {
     width: 90%;

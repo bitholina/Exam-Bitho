@@ -15,8 +15,6 @@ body {
   background-size: cover;
 }
 
-/*pages*/
-
 /*------Grid set up------------------------------*/
 .container {
   height: 100%;
@@ -50,7 +48,7 @@ header {
 
 /* IN ALL pages */
 
-/*-- n a v grid area---------------------......--  n a v -----------------------------  n a v  ---------------*/
+/*-- n a v ---------------------......--  n a v -----------------------------  n a v  ---------------*/
 nav {
   grid-area: n;
   background-color: rgba(3, 19, 46);
@@ -62,7 +60,7 @@ nav {
   /*text-transform: uppercase;*/
 }
 
-/*--f o o t e r---- grid area-------------------f o o t e r------------------------------ f o o t e r ---------------*/
+/*--f o o t e r-----------------------f o o t e r------------------------ f o o t e r ---------------*/
 footer {
   grid-area: f;
   flex-direction: column;
@@ -92,7 +90,8 @@ footer > .box {
   color: #69a9ff;
 }
 
-/*Buttons*/
+/*Buttons
+----------------------------------------------------Buttons-------*/
 .button {
   background-color: rgba(3, 19, 46, 0.65);
   border: white solid 2.5px;
@@ -109,6 +108,25 @@ footer > .box {
 }
 .button:hover {
   background-color: #69a9ff;
+}
+
+/*Video
+----------------------------------------------------Video-------*/
+.video-wrap {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+  max-width: 1920px;
+  margin: 35px auto;
+}
+.video-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 1080px;
 }
 
 /*Navigation Hamburger Menu
@@ -169,9 +187,9 @@ label {
   display: block;
 }
 
-/*-------------------------------------------------------------------------------------------------------1200---Media Queries-------------------------*/
+/*-------------------------------------------------------------------------------------------------------900---Media Queries-------------------------*/
 @media only screen and (min-width: 900px) {
-  /*-------------------------------------------------------------------------------------------------------1200---Media Queries-------------------------*/
+  /*-----------------------------------------------------------------------------------------------------900---Media Queries-------------------------*/
   /*-------navigation---------*/
 
   nav {
@@ -215,12 +233,6 @@ label {
   #hamburger-menu:checked ~ ul {
     display: none;
   }
-
-  @media only screen and (max-width: 800px) {
-  }
-}
-
-@media only screen and (max-width: 600px) {
 }
 
 @media only screen and (max-width: 500px) {
@@ -231,7 +243,4 @@ label {
     padding: 30px 20px 30px 20px;
     font-size: 15px;
   }
-}
-
-@media only screen and (max-width: 300px) {
 }

@@ -21,7 +21,8 @@ section > .item {
   margin-bottom: 50px;
   padding: 2px 4px 12px 4px;
 }
-
+/*Links
+----------------------------------------------------Links-------*/
 a {
   text-decoration: none;
 }
@@ -30,33 +31,13 @@ a:hover {
   color: #69a9ff;
 }
 
-img {
-  width: 100%;
-  border: white solid 2px;
-}
-
 #right {
   float: right;
   padding-right: 12px;
 }
 
-/*video*/
-.video-wrap {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 25px;
-  height: 0;
-  max-width: 1920px;
-  margin: 35px auto;
-}
-.video-wrap iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  max-height: 1080px;
-}
+/*Content
+----------------------------------------------------content-------*/
 
 .crew {
   padding-top: 30px;
@@ -78,6 +59,8 @@ img {
   padding: 10px 10px;
 }
 
+/*Typo Adjustments
+----------------------------------------------------Typo Adjustments-------*/
 h5 {
   font-size: 33px !important;
   margin-bottom: 0px !important;
@@ -90,7 +73,8 @@ h4 {
   margin-bottom: 5px !important;
 }
 
-/*Media Query*/
+/*Media Query
+----------------------------------------------------Media Query-------*/
 
 @media only screen and (max-width: 1200px) {
   section > .item {
@@ -102,13 +86,4 @@ h4 {
   section > .item {
     width: 100%;
   }
-}
-
-@media only screen and (max-width: 600px) {
-}
-
-@media only screen and (max-width: 500px) {
-}
-
-@media only screen and (max-width: 300px) {
 }
