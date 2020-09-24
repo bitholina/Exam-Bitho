@@ -67,6 +67,7 @@ footer {
   grid-area: f;
   flex-direction: column;
   padding: 30px;
+  margin-top: 240px;
   background-color: #03132e;
   justify-content: flex-start;
   align-items: flex-start;
@@ -83,7 +84,7 @@ footer > .box {
 .rights,
 .adr,
 .fab {
-  color: lightgray;
+  color: #acacac;
   padding-right: 15px;
 }
 

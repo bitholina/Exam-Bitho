@@ -52,10 +52,6 @@ section {
   padding: 30px;
 }
 
-#launch_btn {
-  float: right;
-}
-
 .results {
   margin-top: 30px;
   display: flex;
@@ -123,9 +119,6 @@ h6 {
 }
 
 @media only screen and (max-width: 500px) {
-  #launch_btn {
-    float: left;
-  }
 }
 
 @media only screen and (max-width: 300px) {
