@@ -31,46 +31,14 @@ a:hover {
   color: #69a9ff;
 }
 
-#right {
-  float: right;
-  padding-right: 12px;
-}
-
 /*Content
 ----------------------------------------------------content-------*/
-
-.crew {
-  padding-top: 30px;
+.crew_box {
+  padding: 15px;
 }
 
-.crew_results {
-  margin-top: 25px;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column-reverse;
-}
-
-.crew_results > div {
-  border-bottom: 2px solid white;
-  border-top: 2px solid white;
-  width: 90%;
-  max-width: 650px;
-  margin-bottom: 30px;
-  padding: 10px 10px;
-}
-
-/*Typo Adjustments
-----------------------------------------------------Typo Adjustments-------*/
-h5 {
-  font-size: 33px !important;
-  margin-bottom: 0px !important;
-  margin-top: -5px !important;
-}
-
-h4 {
-  font-size: 18px !important;
-  line-height: 3px;
-  margin-bottom: 5px !important;
+.crew_box > img {
+  max-width: 90%;
 }
 
 /*Media Query

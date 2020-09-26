@@ -1,23 +1,24 @@
 const url = "https://api.spacexdata.com/v4/crew";
-const resultsContainer = document.querySelector(".crew_results");
+const resultsContainer = document.querySelector(".crew_box");
 
-async function makeApiCall() {
-  const response = await fetch(url);
-  const json = await response.json();
+async function fetchInfo() {
+  try {
+    const response = await fetch(url);
+    const results = await response.json();
 
-  console.log(json);
+    console.log(results);
 
-  const results = json;
-
-  results.forEach(function (result) {
-    resultsContainer.innerHTML += `<div>
-                                   <h4>${result.image}</h4>
-                                   
-                                   <h5>${result.name}</h5>
-                                   <h6>Agency</h6>
-                                   <h4>${result.agency}</h4>
-                                   </div>`;
-  });
+    results.forEach(function (crew) {
+      resultsContainer.innerHTML += `
+                                 <div class="crew_box"><img src="${crew.image}"/>                                      
+                                 <h6>${crew.name}</h6>
+                                 <h6>${crew.agency}</h6>
+                                 </div>`;
+    });
+  } catch (error) {
+    console.log(error);
+    resultsContainer.innerHTML = message("error", error);
+  }
 }
 
-makeApiCall();
+fetchInfo();

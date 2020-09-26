@@ -67,6 +67,11 @@ textarea {
   display: none;
 }
 
+/*Typo Adjust
+----------------------------------------------------typo adjust-------*/
+h5 {
+  font-size: 23px;
+}
 /*Media Query
 ----------------------------------------------------Media Query-------*/
 @media only screen and (max-width: 800px) {
