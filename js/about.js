@@ -10,9 +10,10 @@ async function fetchInfo() {
 
     results.forEach(function (crew) {
       resultsContainer.innerHTML += `
-                                 <div class="crew_box"><img src="${crew.image}"/>                                      
+                                 <div class="crew_box"><img src="${crew.image}" alt="${crew.name}"/>                                      
                                  <h6>${crew.name}</h6>
                                  <h6>${crew.agency}</h6>
+                                 <h2><a href="${crew.wikipedia}"/>Read More</h2>
                                  </div>`;
     });
   } catch (error) {

@@ -57,7 +57,6 @@ nav {
   font-weight: 700;
   font-style: normal;
   letter-spacing: 0.11em;
-  /*text-transform: uppercase;*/
 }
 
 /*--f o o t e r-----------------------f o o t e r------------------------ f o o t e r ---------------*/
@@ -234,7 +233,7 @@ label {
     display: none;
   }
 }
-
+/*-----------------------------------------------------------------------------------------------------500---Media Queries-------------------------*/
 @media only screen and (max-width: 500px) {
   .button {
     margin-top: 30px;

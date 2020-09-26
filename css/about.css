@@ -21,6 +21,18 @@ section > .item {
   margin-bottom: 50px;
   padding: 2px 4px 12px 4px;
 }
+
+/*Typo Adjust
+----------------------------------------------------adjustments-------*/
+h6 {
+  /*blue*/
+  margin-bottom: -30px;
+}
+h2 {
+  /*Ingress blue*/
+  font-size: 19px;
+  margin-top: 40px;
+}
 /*Links
 ----------------------------------------------------Links-------*/
 a {
